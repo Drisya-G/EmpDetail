@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "firstname": "Drisya",
+      "lastname": "G",
+      "birthdate": "2023-01-04",
+      "gender": "f",
+      "address": "alathur",
+      "phonenumber": "8637494203",
+      "jobrole": "Manager",
+      "profile": "drisya.jpeg",
+      "id": 1
+    },
+    {
+      "firstname": "Dev",
+      "lastname": "R",
+      "birthdate": "2022-12-21",
+      "gender": "f",
+      "address": "America",
+      "phonenumber": "8679867565",
+      "jobrole": "Developer",
+      "profile": "Dev.jpg",
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,27 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Employee } from './modals/employee.modal';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ServicesService {
+
+  baseUrl='http://localhost:3000/posts';
+  // json-server --watch db.json
+
+  constructor(private http:HttpClient) { }
+
+  getEmployees() {
+    return this.http.get<Employee[]>(this.baseUrl);
+  }
+  postEmployee(employee: Employee) {
+    return this.http.post<Employee>(this.baseUrl, employee);
+  }
+  
+  deleteEmployee(id: string) {
+    return this.http.delete(this.baseUrl + '/' + id);
+  }
+
+
+}
